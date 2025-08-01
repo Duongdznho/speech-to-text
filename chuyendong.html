@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Âm thanh thành DOCX</title>
+    <style>
+        /* (Thêm CSS để giao diện đẹp hơn nếu muốn) */
+        body { font-family: sans-serif; padding: 20px; }
+        #resultText { border: 1px solid #ccc; padding: 10px; min-height: 200px; margin-top: 10px; }
+        button { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Chuyển Âm thanh thành Văn bản DOCX</h1>
+    <p>Nhấn "Bắt đầu ghi âm" và nói. Văn bản sẽ xuất hiện bên dưới.</p>
+    
+    <button id="startButton">Bắt đầu ghi âm</button>
+    <button id="stopButton">Dừng ghi âm</button>
+    <button id="downloadButton">Tải xuống file .docx</button>
+
+    <div id="resultText" contenteditable="true"></div>
+
+    <!-- Tải thư viện docx từ CDN -->
+    <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+    <script src="app.js"></script> <!-- File JavaScript chính của bạn -->
+</body>
+</html>
